@@ -1,16 +1,11 @@
-body{
-  padding: 0;
-  margin: 0;
-  font: 95% Arial, Helvetica, sans-serif;
-}
-
-.form-style{
+.form-edit-contact-style{
 	width: 400px;
 	margin: auto;
 	padding: 16px;
 	background: #F7F7F7;
 }
-.form-style h1{
+
+.form-edit-contact-style h1{
 	background: #FFA65B;
 	padding: 20px 0;
 	font-size: 140%;
@@ -19,12 +14,13 @@ body{
 	color: #fff;
 	margin: -16px -16px 16px -16px;
 }
-.form-style input[type="text"],
-.form-style input[type="email"],
-.form-style input[type="password"],
-.form-style input[type="number"],
-.form-style textarea,
-.form-style select {
+
+.form-edit-contact-style input[type="text"],
+.form-edit-contact-style input[type="email"],
+.form-edit-contact-style input[type="password"],
+.form-edit-contact-style input[type="number"],
+.form-edit-contact-style textarea,
+.form-edit-contact-style select {
 	-webkit-transition: all 0.30s ease-in-out;
 	-moz-transition: all 0.30s ease-in-out;
 	-ms-transition: all 0.30s ease-in-out;
@@ -42,19 +38,19 @@ body{
 	font: 95% Arial, Helvetica, sans-serif;
 }
 
-.form-style input[type="text"]:focus,
-.form-style input[type="email"]:focus,
-.form-style input[type="password"]:focus,
-.form-style input[type="number"]:focus,
-.form-style textarea:focus,
-.form-style select:focus{
+.form-edit-contact-style input[type="text"]:focus,
+.form-edit-contact-style input[type="email"]:focus,
+.form-edit-contact-style input[type="password"]:focus,
+.form-edit-contact-style input[type="number"]:focus,
+.form-edit-contact-style textarea:focus,
+.form-edit-contact-style select:focus{
 	box-shadow: 0 0 5px #FFA65B;
 	padding: 3%;
 	border: 1px solid #FFA65B;
 }
 
-.form-style input[type="submit"],
-.form-style input[type="button"]{
+.form-edit-contact-style input[type="submit"],
+.form-edit-contact-style input[type="button"]{
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -68,13 +64,8 @@ body{
 	color: #fff;
 }
 
-.form-style input[type="submit"]:hover,
-.form-style input[type="button"]:hover{
+.form-edit-contact-style input[type="submit"]:hover,
+.form-edit-contact-style input[type="button"]:hover{
   background: #df8943;
   border-bottom: 2px solid #df8943;
-}
-
-.form-error{
-	color: red;
-	margin: 10px 0px;
 }

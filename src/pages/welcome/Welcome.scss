@@ -1,0 +1,22 @@
+.welcome-components{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.welcome-login{
+  width: 50%;
+  height: 100vh;
+  color: white;
+  background-color: black;
+  display: flex;
+  align-items: center;
+}
+
+.welcome-register{
+  width: 50%;
+  height: 100vh;
+  background-color: white; 
+  display: flex;
+  align-items: center;
+}

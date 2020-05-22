@@ -1,8 +1,16 @@
 import { combineReducers } from "redux";
-import dataReducer from "./dataReducer";
+import loginUserReducer from "./loginUserReducer";
+import registerUserReducer from "./registerUserReducer";
+import stateWelcomeCompReducer from "./stateWelcomeCompReducer";
+import stateDashboardCompReducer from "./stateDashboardCompReducer";
+import userToEditReducer from "./userToEditReducer";
 
 const allReducers = combineReducers({
-  dataName: dataReducer,
+  dataLoginUser: loginUserReducer,
+  dataRegisterUser: registerUserReducer,
+  dataWelcome: stateWelcomeCompReducer,
+  dataDashboard: stateDashboardCompReducer,
+  dataUserToEdit: userToEditReducer,
 });
 
 export default allReducers;

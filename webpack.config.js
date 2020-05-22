@@ -1,6 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const PrettierPlugin = require('prettier-webpack-plugin');
+const PrettierPlugin = require("prettier-webpack-plugin");
 
 module.exports = {
   entry: './src/index.js',
@@ -16,12 +16,6 @@ module.exports = {
   },
   module: {
     rules: [
-      {
-        enforce: 'pre',
-        test: /\.js$/,
-        exclude: /node_modules/,
-        loader: 'eslint-loader'
-      },
       {
         test: /\.(js|jsx)$/,
         use: ['babel-loader'],
@@ -39,12 +33,12 @@ module.exports = {
       template: './src/index.html'
     }),
     new PrettierPlugin({
-      printWidth: 80, // Specify the length of line that the printer will wrap on.
-      tabWidth: 2, // Specify the number of spaces per indentation-level.
-      useTabs: false, // Indent lines with tabs instead of spaces.
-      semi: true, // Print semicolons at the ends of statements.
-      encoding: 'utf-8', // Which encoding scheme to use on files
-      extensions: ['.js', '.ts'] // Which file extensions to process
+      printWidth: 80,               // Specify the length of line that the printer will wrap on.
+      tabWidth: 2,                  // Specify the number of spaces per indentation-level.
+      useTabs: false,               // Indent lines with tabs instead of spaces.
+      semi: true,                   // Print semicolons at the ends of statements.
+      encoding: 'utf-8',            // Which encoding scheme to use on files
+      extensions: [ ".js", ".ts" ]  // Which file extensions to process
     })
   ]
 };

@@ -2,30 +2,22 @@
 import React from "react";
 
 // Redux imports
-import { useDispatch, useSelector } from "react-redux";
-import { dataAction } from "./redux/actions/dataAction";
+import { useSelector } from "react-redux";
 
-// Components imports
-import Title from "./components/Title/Title";
+// Components and pages imports
+import Welcome from "./pages/welcome/Welcome";
+import Dashboard from "./pages/dashboard/Dashboard";
 
 // Style imports
 import "./App.scss";
 
 function App() {
-  const dispatch = useDispatch();
-  const nameOfRedux = useSelector((state) => state.dataName);
-
-  const launchRedux = () => {
-    const dataName = "Hi Redux!!";
-    dispatch(dataAction(dataName));
-  };
+  const stateWelcome = useSelector((state) => state.dataWelcome);
 
   return (
     <div>
-      <h1>Hi app!</h1>
-      <Title />
-      <button onClick={launchRedux}>Launch redux</button>
-      <p>{nameOfRedux}</p>
+      {!stateWelcome && <Welcome />}
+      {stateWelcome && <Dashboard />}
     </div>
   );
 }
