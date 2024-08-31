@@ -44,6 +44,6 @@
     "prettier-webpack-plugin": "^1.2.0",
     "sass": "^1.26.5",
     "sass-loader": "^8.0.2",
-    "webpack": "^4.43.0"
+    "webpack": "^5.94.0"
   }
 }
